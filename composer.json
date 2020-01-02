@@ -1,0 +1,22 @@
+{
+    "name": "ivanpepelko/backlight-ctrl",
+    "description": "Backlight control via xrandr",
+    "type": "project",
+    "require": {
+        "symfony/console": "^5.0",
+        "symfony/process": "^5.0",
+        "monolog/monolog": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aperture\\Backlight\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Pepelko",
+            "email": "ivan.pepelko@gmail.com"
+        }
+    ]
+}
