@@ -2,6 +2,7 @@
     "name": "ivanpepelko/backlight-ctrl",
     "description": "Backlight control via xrandr",
     "type": "project",
+    "version": "0.1.1",
     "require": {
         "symfony/console": "^5.0",
         "symfony/process": "^5.0",

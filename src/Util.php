@@ -104,14 +104,14 @@ final class Util
         return filter_var($brightnessStr, FILTER_VALIDATE_FLOAT);
     }
 
-    public static final function setBrightness(float $value)
+    public static function setBrightness(float $value): void
     {
         $process = new Process(['xrandr', '--output', self::getPrimaryDisplay(), '--brightness', (string) $value]);
 
         $process->run();
 
         if (!$process->isSuccessful()) {
-            throw new RuntimeException('Could not set the brightness: ' . $process->getErrorOutput());
+            throw new RuntimeException(sprintf('Could not set the brightness: %s', $process->getErrorOutput()));
         }
     }
 }

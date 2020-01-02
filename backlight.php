@@ -7,7 +7,7 @@ use Symfony\Component\Console\Application;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$app = new Application('backlight', '0.1.0');
+$app = new Application('backlight', '0.1.1');
 
 $app->addCommands(
     [

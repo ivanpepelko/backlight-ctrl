@@ -63,6 +63,12 @@ class SetCommand extends Command
             $value = Util::getBrightness() - $value;
         }
 
+        if ($dec && $value > 1) {
+            $value = round($value, 1, PHP_ROUND_HALF_DOWN);
+        }
+
+        $logger->info(sprintf('New brightness: %s', $value));
+
         if (!$force && ($value < Limits::MIN_BRIGHTNESS || $value > Limits::MAX_BRIGHTNESS)) {
             $logger->error(
                 sprintf(
