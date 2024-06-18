@@ -6,7 +6,7 @@
     "require": {
         "symfony/console": "^5.0",
         "symfony/process": "^5.0",
-        "monolog/monolog": "^2.0"
+        "monolog/monolog": "^3.6"
     },
     "autoload": {
         "psr-4": {
